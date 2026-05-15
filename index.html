@@ -271,12 +271,12 @@
                     <td class="p-4 font-medium text-white">${row.廠商名稱 || '-'}</td>
                     <td class="p-4 text-slate-400">${row.票期 || '-'}</td>
                     <td class="p-4 text-center">
-                        <span class="px-3 py-1 rounded-full text-[10px] ${row.是否禁背 === '禁背' ? 'bg-amber-900/30 text-amber-400 border border-amber-800/30' : 'bg-slate-800 text-slate-500'}">
+                        <span class="px-3 py-1 rounded-full text-[12px] ${row.是否禁背 === '禁背' ? 'bg-amber-900/30 text-amber-400 border border-amber-800/30' : 'bg-slate-800 text-slate-500'}">
                             ${row.是否禁背 || '不禁背'}
                         </span>
                     </td>
                     <td class="p-4 text-center">
-                        <span class="px-3 py-1 rounded-full text-[10px] ${row.支付方式 === '支票' ? 'bg-blue-900/30 text-blue-400 border border-blue-800/30' : 'bg-slate-800 text-slate-500'}">
+                        <span class="px-3 py-1 rounded-full text-[12px] ${row.支付方式 === '支票' ? 'bg-blue-900/30 text-blue-400 border border-blue-800/30' : 'bg-slate-800 text-slate-500'}">
                             ${row.支付方式 || '匯款'}
                         </span>
                     </td>
