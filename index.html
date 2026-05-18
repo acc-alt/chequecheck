@@ -108,19 +108,20 @@
             <div>
                 <h2 class="text-3xl font-light tracking-tight">廠商支票開立查詢</h2>
                 <p class="text-slate-400 mt-1">Cheque Check</p>
+            </div>  
+            <div class="flex items-center gap-4">
+                <span id="loadingStatus" class="text-xs text-amber-400 hidden animate-pulse">數據同步中...</span>
+                <!-- 調整後的按鈕區塊 -->
+                <button onclick="loadData()" class="flex items-center gap-1 text-slate-400 hover:text-emerald-400 transition-colors text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.253 8H18" />
+                    </svg>
+                    重新整理
+                </button>
+                <span class="text-slate-600">|</span>
+                <button onclick="logout()" class="text-slate-400 hover:text-rose-400 transition-colors text-sm">安全登出</button>
             </div>
-            
-     <div class="flex items-center gap-4">
-         <span id="loadingStatus" class="text-xs text-amber-400 hidden animate-pulse">數據同步中...</span>
-         <button onclick="loadData()" class="flex items-center gap-1 text-slate-400 hover:text-emerald-400 transition-colors text-sm">
-             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.253 8H18" />
-             </svg>
-             重新整理
-         </button>
-         <span class="text-slate-600">|</span>
-         <button onclick="logout()" class="text-slate-400 hover:text-rose-400 transition-colors text-sm">安全登出</button>
-     </div>
+        </div>
 
         <!-- 搜尋工具列 -->
         <div class="glass-morphism p-6 rounded-xl mb-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
